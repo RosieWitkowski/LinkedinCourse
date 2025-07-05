@@ -10,5 +10,4 @@ for yr in last_twenty_years:
   if not yr["value"]:
     continue 
   display_width = yr["value"] // 10_000_000
-  print(f"POPULATION: {display_width * '|#|'} ({yr['value']}) in YEAR {yr['date']}")
-  # Git commit 
+  print(f"POPULATION: {display_width * '|#|'} ({yr['value']}) in YEAR: {yr['date']}")
