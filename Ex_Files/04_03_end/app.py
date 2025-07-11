@@ -22,10 +22,10 @@ def laureate_list():
     if not request.args.get("surname"):
         return jsonify(results)
 
-    search_string = request.args.get("surname").lower().strip()
-
+    # Your code here!
+    search_str = request.args.get("surname").lower().strip()
     for laureate in laureates:
-        if search_string in laureate["surname"].lower():
+        if search_str in laureate["surname"].lower():
             results.append(laureate)
 
     return jsonify(results)
